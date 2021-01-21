@@ -3,11 +3,11 @@
 require File.expand_path("../lib/yard/virtus/version", __FILE__)
 
 Gem::Specification.new do |gem|
-  gem.name        = "yard-virtus"
+  gem.name        = "yard-virtus2"
   gem.version     = YARD::Virtus::VERSION
-  gem.authors     = ["Dmitry Dzema"]
-  gem.email       = ["dimad.ag@gmail.com"]
-  gem.homepage    = "https://github.com/DimaD/yard-virtus"
+  gem.authors     = ["Dmitry Dzema", "Daniel Orner"]
+  gem.email       = ["dimad.ag@gmail.com", "dmorner@gmail.com"]
+  gem.homepage    = "https://github.com/dorner/yard-virtus"
   gem.summary     = "This library provides handlers to YARD so it can extract information about Virtus attributes like types and visibility"
   gem.description = gem.summary
   gem.license     = "MIT"
@@ -18,5 +18,5 @@ Gem::Specification.new do |gem|
   gem.extra_rdoc_files = %w[LICENSE.txt README.md]
 
   gem.add_dependency("virtus", "= 1.0.2")
-  gem.add_dependency("yard",   "~> 0.8.7.4")
+  gem.add_dependency("yard")
 end
