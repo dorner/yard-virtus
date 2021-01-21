@@ -1,5 +1,6 @@
 # yard-virtus
 
+***This is a fork of yard-virtus which relaxes the YARD requirement to allow working with later versions of YARD. The gem is called "yard-virtus2" but all other interactions use "yard-virtus" as in the original.***
 
 This gem helps to generate YARD documentation for classes built using [Virtus](https://github.com/solnic/virtus). It extracts information about attributes, their types and writers so you don't need to specify it manually.
 
@@ -10,7 +11,7 @@ This gem depends on exact details of implementation of Virtus so it's locked to 
 Add the gem to your Gemfile (inside development or documentation group):
 
 ``` ruby
-  gem "yard-virtus", "= 0.0.4"
+  gem "yard-virtus2", "= 0.0.5"
 ```
 
 ## Usage
@@ -18,7 +19,7 @@ Add the gem to your Gemfile (inside development or documentation group):
 If you use YARD via Rake and `YARD::Rake::YardocTask` or via custom ruby script add
 
 ``` ruby
-  require "yard-virtus"
+  require "yard-virtus2"
 ```
 
 If you use YARD command line tool use `--plugin` switch like this
